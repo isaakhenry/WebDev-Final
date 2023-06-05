@@ -75,7 +75,7 @@ section {
 }
 #About p {
   display: flex;
-  text-align: center;
+  text-align: left;
   width: 40%;
   max-width: 100%;
   font-size: 40px;
@@ -83,6 +83,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  color: #fff;
 }
 #PreviousWork {
   background: #fff;
@@ -107,13 +108,14 @@ section {
 }
 
 #PreviousWork {
+  background-image: url("./Images/LandBridge.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   height: 100vh;
-  background: #fff;
 }
 
 .accordion {
@@ -126,6 +128,8 @@ section {
   font-size: 15px;
   transition: 0.4s;
   margin-bottom: 10px;
+  margin-top: 10px;
+  width: 50%;
 }
 
 .active,
@@ -135,17 +139,28 @@ section {
 
 .panel {
   padding: 0 18px;
-  background-color: #fffff0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .panel p {
-  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  flex-grow: 1;
+  border: 1px solid #000000;
+  background-color: #5a5a5a;
+  color: #fff;
+}
+
+.panel p:hover {
+  background-color: #000000;
 }
 
 @media (max-width: 1540px) {

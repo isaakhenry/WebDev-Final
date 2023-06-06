@@ -85,27 +85,6 @@ section {
   box-sizing: border-box;
   color: #fff;
 }
-#PreviousWork {
-  background: #fff;
-}
-
-#Projects {
-  background: #5a5a5a;
-}
-
-#Contact {
-  background: #fff;
-}
-
-.compressedMenu {
-  display: none;
-}
-.menuLine {
-  width: 20px;
-  height: 3px;
-  background-color: #fff;
-  margin-bottom: 4px;
-}
 
 #PreviousWork {
   background-image: url("./Images/LandBridge.jpg");
@@ -116,6 +95,23 @@ section {
   flex-direction: column;
   text-align: center;
   height: 100vh;
+}
+#Projects {
+  background: #5a5a5a;
+}
+
+#Contact {
+  background-color: #fff;
+}
+
+.compressedMenu {
+  display: none;
+}
+.menuLine {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
 }
 
 .accordion {
@@ -130,6 +126,8 @@ section {
   margin-bottom: 10px;
   margin-top: 10px;
   width: 50%;
+  font-size: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .active,
@@ -140,9 +138,9 @@ section {
 .panel {
   padding: 0 18px;
   max-height: 0;
+  font-size: 30px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  font-size: 18px;
   display: flex;
   flex-direction: column;
 }
@@ -160,6 +158,55 @@ section {
 }
 
 .panel p:hover {
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.buttons {
+  justify-content: center;
+}
+
+.submit {
+  border: none;
+  outline: 0;
+  display: inline;
+  padding: 8px;
+  color: white;
+  background-color: #565656;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  font-size: 18px;
+}
+
+.submit:hover {
   background-color: #000000;
 }
 

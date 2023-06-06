@@ -30,3 +30,26 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (!name || !email || !message) {
+    console.log("Please fill in all fields.");
+    return;
+  }
+
+  console.groupCollapsed("========= Form Submission =========");
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+  console.groupEnd();
+
+  form.reset();
+});

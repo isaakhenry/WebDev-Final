@@ -44,7 +44,28 @@
           </div>
       </section>
       <section id="Projects">ProjectsTest</section>
-      <section id="Contact">Contact</section>
+      <section id="Contact">
+        <div class="container">
+          <form id="contactForm">
+            <h1 class = "title">Contact</h1>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" autcomplete="message" required></textarea>
+            </div>
+            <div class="buttons">
+              <input class="submit" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
       </div>
     </main>
   </body>

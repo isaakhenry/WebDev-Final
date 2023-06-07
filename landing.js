@@ -3,7 +3,7 @@ let aboutSection = document.getElementById("About");
 
 //Create a new image
 const makeImg = () => {
-  let img = new Image(400, 400);
+  let img = new Image(200, 200);
   img.src = "./Images/Isaak.JPEG";
   img.alt = "Photo of man in a hat.";
   aboutSection.appendChild(img);

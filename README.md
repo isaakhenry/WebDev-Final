@@ -33,3 +33,7 @@ This project used several references to help implement specific features as outl
 - W3Schools for the accordion menu, found here: https://www.w3schools.com/howto/howto_js_accordion.asp
 - freeCodeCamp for on-click accordion functionality, found here: https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
 - W3Schools for the scroll-behavior, found here: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+
+## Deployment
+
+This website was deployed at https://isaakhenry.github.io/WebDev-Final/

@@ -31,8 +31,37 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const form = document.getElementById("contactForm");
+const repositories = [
+  {
+    name: "Full-stack MERN chat application",
+    url: "https://github.com/isaakhenry/MERN-Chat",
+  },
+  {
+    name: "Torque Vectoring Capstone",
+    url: "https://github.com/VikingMotorsports/torque-vectoring",
+  },
+  {
+    name: "Abstract Syntax Tree in Java",
+    url: "https://github.com/isaakhenry/ParseTree",
+  },
+];
 
+const cardContainer = document.getElementById("cardContainer");
+//Dynamically create cards.
+repositories.forEach((repository) => {
+  const card = document.createElement("div");
+  card.classList.add("card");
+  const text = document.createElement("p");
+  text.textContent = repository.name;
+  card.appendChild(text);
+  card.addEventListener("click", () => {
+    window.open(repository.url, "_blank");
+  });
+  cardContainer.appendChild(card);
+});
+
+const form = document.getElementById("contactForm");
+//Log data when submitted
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 

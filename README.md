@@ -31,4 +31,5 @@ This code does not have any external dependencies. It uses HTML, CSS, and JavaSc
 This project used several references to help implement specific features as outlined below:
 
 - W3Schools for the accordion menu, found here: https://www.w3schools.com/howto/howto_js_accordion.asp
+- freeCodeCamp for on-click accordion functionality, found here: https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/
 - W3Schools for the scroll-behavior, found here: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp

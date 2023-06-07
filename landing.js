@@ -1,5 +1,7 @@
+//Dynamically insert image
 let aboutSection = document.getElementById("About");
 
+//Create a new image
 const makeImg = () => {
   let img = new Image(400, 400);
   img.src = "./Images/Isaak.JPEG";
@@ -7,6 +9,7 @@ const makeImg = () => {
   aboutSection.appendChild(img);
 };
 
+//Dynamically insert bio
 const addBio = () => {
   let p = document.createElement("p");
   p.innerText =
@@ -16,6 +19,7 @@ const addBio = () => {
 makeImg();
 addBio();
 
+//Accordion dropdown functionality
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -47,7 +51,9 @@ const repositories = [
 ];
 
 const cardContainer = document.getElementById("cardContainer");
+
 //Dynamically create cards.
+
 repositories.forEach((repository) => {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -61,7 +67,9 @@ repositories.forEach((repository) => {
 });
 
 const form = document.getElementById("contactForm");
+
 //Log data when submitted
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 

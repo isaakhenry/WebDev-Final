@@ -25,3 +25,10 @@ To use this code, follow these steps:
 ## Dependencies
 
 This code does not have any external dependencies. It uses HTML, CSS, and JavaScript, which are supported by modern web browsers.
+
+## References
+
+This project used several references to help implement specific features as outlined below:
+
+- W3Schools for the accordion menu, found here: https://www.w3schools.com/howto/howto_js_accordion.asp
+- W3Schools for the scroll-behavior, found here: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
